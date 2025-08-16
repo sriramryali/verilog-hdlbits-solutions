@@ -1,5 +1,7 @@
 // Baisc implementation of an AND gate
-module top_module(input a,b, output out);
+module top_module(
+    input a,b, 
+    output out);
     assign out = a & b; // This is a behavioral description
 endmodule
 
