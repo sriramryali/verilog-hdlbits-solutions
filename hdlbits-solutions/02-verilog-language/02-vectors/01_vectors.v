@@ -1,7 +1,7 @@
 // Basic implementation of vectors
 module top_module(
-    input [2:0] vec,      // wire [msb : lsb] name, the size of the vector is mentioned before its name, ex: reg [0:3] latch -> a 4-bit vector, 0 -> MSB 3-> LSB 
-    output [2:0] outv,    // slicing(taking a part of the vector) can be done, this comes after thr name, ex: latch[1:2]
+    input [2:0] vec,      // wire [msb : lsb] name, the size of the vector is mentioned before its name, ex: reg [0:3] latch -> a 4-bit vector, 0 -> MSB 3-> LSB, -ve ranges are also allowed
+    output [2:0] outv,    // slicing(taking a part of the vector) can be done, this comes after the name, ex: latch[1:2]
     output o0,            // Once a vector is defined, it MSB and LSB cannot be changed, ex: assign mux = latch[3:0] -> wrong, because latch is from 0 to 3 (latch[0:3])
     output o1,
     output o2);
