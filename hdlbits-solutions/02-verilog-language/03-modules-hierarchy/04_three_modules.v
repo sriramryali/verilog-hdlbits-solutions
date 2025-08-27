@@ -8,3 +8,12 @@ module top_module(
     d_ff inst2(.clk(clk), .d(t1), .q(t2));
     d_ff inst3(.clk(clk), .d(t2), .q(q));
 endmodule
+
+
+// d_ff module
+module d_ff(
+    input clk,
+    input d,
+    output q);
+    // body
+endmodule
