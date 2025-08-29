@@ -11,3 +11,12 @@ module top_module(
     my_dff8 inst3(.clk(clk), .d(t[2]), .q(t[3]));
     assign q = t[sel];   // a simple behavioral description for MUX
 endmodule
+
+
+// Instantiated module my_dff8
+module my_dff8(
+    input clk,
+    input d,
+    output q);
+    // body
+endmodule
