@@ -1,4 +1,4 @@
-// Implementation of a 7458 chip, only using assign statements without any intermediate wires
+// Implementation of a 7458 chip, only using assign statements (without any intermediate wires)
 module top_module(
     input p1a,p1b,p1c,p1d,p1e,p1f,
     output p1y,
