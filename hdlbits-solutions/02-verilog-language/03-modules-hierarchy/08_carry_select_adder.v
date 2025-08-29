@@ -1,4 +1,4 @@
-// Improved implementation of an adder, with carry selection using a MUX
+// Improved implementation of an adder with two 16-bit adders (along with carry selection using a MUX)
 module top_module(
     input [31:0] a,
     input [31:0] b,       // drawback of a ripple carry adder is its delay

@@ -1,4 +1,4 @@
-// Implementing a 32-bit adder
+// Implementation a 32-bit adder using two 16-bit adders
 module top_module(
     input [31:0] a,
     input [31:0] b,

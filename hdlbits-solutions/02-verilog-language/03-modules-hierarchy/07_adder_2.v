@@ -1,4 +1,4 @@
-// Instantiation of add1 adder in a 16-bit adder
+// Implementation of a 32-bit adder using two 16-bit adders (with instantiation of full addera in a 16-bit adder)
 module top_module(
     input [31:0] a,     // you need to write the code for add1 module and top module, code for add16 has been already given with 16 add1's instantiated
     input [31:0] b,
@@ -11,7 +11,7 @@ module top_module(
 endmodule
 
 
-// add1 module
+// add1 module -> a full adder
 module add1(
     input a,    // simply, this is a full adder with a,b & cin as inputs and cout and sum as outputs
     input b,
