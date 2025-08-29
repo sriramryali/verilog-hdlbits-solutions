@@ -5,8 +5,8 @@ module top_module(
     output [31:0] sum);
     wire c1,c2;
     wire [15:0] sum1,sum2,
-    add16 inst1(.clk(clk), .a(a[15:0]), .b(b[15:0]), .cin(0), .cout(c1), .sum(sum1));
-    add16 inst2(.clk(clk), .a(a[31:16]), .b(b[31:16]), .cin(c1), .cout(c2), .sum(sum2));
+    add16 inst1(.a(a[15:0]), .b(b[15:0]), .cin(0), .cout(c1), .sum(sum1));
+    add16 inst2(.a(a[31:16]), .b(b[31:16]), .cin(c1), .cout(c2), .sum(sum2));
     assign sum = {sum2,sum1};
 endmodule
 
@@ -27,8 +27,7 @@ endmodule
 module add16(
     input [15:0] a,
     input [15:0] b,
-    input cin,
-    input clk,    // clk for a combinational ckt is like enable, works when enable = 1 and when enable = 0 acts as memory (for a active high enable)
+    input cin,   
     output cout,
     output [15:0] sum);
     // body (16 instances of add1 are included here)
