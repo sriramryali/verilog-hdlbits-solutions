@@ -12,7 +12,7 @@ module top_module(
             8'bxx100000 : pos = 5;
             8'bx1000000 : pos = 6;
             8'b10000000 : pos = 7;
-            default : pos = 0;
+            default : pos = 0;       // can also be written as 8'b00000000 : pos = 0
         endcase
     end
 endmodule
