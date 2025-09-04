@@ -18,5 +18,5 @@ module top_module(
     input [7:0] c,
     input [7:0] d,
     output [7:0] e);
-    assign min = ((a < b) ? ((a < c) ? ((a < d) ? a : d)) : ((b < c) ? ((b < d) ? b : d) : ((c < d) ? c : d)));   // not recommended, prone to errors
+    assign min = ((a<b) ? ((a<c) ? ((a<d) ? a : d)) : ((b<c) ? ((b<d) ? b : d) : ((c<d) ? c : d)));   // not recommended, prone to errors
 endmodule
