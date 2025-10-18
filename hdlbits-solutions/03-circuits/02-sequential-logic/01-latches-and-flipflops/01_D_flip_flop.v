@@ -7,3 +7,7 @@ module top_module(
         q <= d;                  // for a single statement, begin-end is not needed
     end
 endmodule
+
+
+// Always use <= (non blocking assignment) for sequential ckts -> better consistency, reduces errors
+// Always use = (blocking assignment) for combinational ckts -> better consistency , reduces errors
