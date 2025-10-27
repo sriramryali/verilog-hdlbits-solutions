@@ -3,7 +3,7 @@ module top_module(
     input [7:0] d,
     input clk,
     input areset,
-    output reg [7:0] q);     // if the compiler uses system veriog (as with the case of hdl bits),  no need mention reg here : output x is same as ouptut logic x -> the compiler decides if it is reg or wire
+    output reg [7:0] q);     // if the compiler uses system veriog (as with the case of hdl bits),  no need to mention reg here : output x is same as ouptut logic x -> the compiler decides if it is reg or wire
     always @(posedge clk or posedge areset) begin      // asynchronus reset (comma can also be used in the place of or)
         if (reset) begin
             q <= 8'h00;

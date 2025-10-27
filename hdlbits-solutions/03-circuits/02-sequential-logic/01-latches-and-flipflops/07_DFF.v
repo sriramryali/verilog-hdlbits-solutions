@@ -3,7 +3,7 @@ module top_module(
     input d,
     input clk,
     input ar,   // asynchronus reset
-    output q);
+    output reg q);
     always @(posedge clk or posedge ar) begin
         if(ar) begin
             q <= 1'b0;

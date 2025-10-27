@@ -4,7 +4,7 @@ module top_module(
     input resetn,      // synchronus active low reset triggered by +ve edge of the clock
     input [15:0] d,
     input [1:0] byteena,
-    output [15:0] q);
+    output reg [15:0] q);
     always @(posedge clk) begin
         if (resetn) begin
             q[15:8] <= (byteena[1]) ? d[15:8] : q[15:8];     // upper bits will be written when byteena[1] = 1

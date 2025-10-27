@@ -2,7 +2,7 @@
 module top_module(
     input d,
     input ena,       // enable is used for a latch
-    output q);
+    output reg q);
     always @(ena) begin    // whenever the value of enable changes
         if(ena) begin
             q <= d;        // if enable = 1, q = d, otherwise previous value of q is stored (if we haven't mentioned else part)

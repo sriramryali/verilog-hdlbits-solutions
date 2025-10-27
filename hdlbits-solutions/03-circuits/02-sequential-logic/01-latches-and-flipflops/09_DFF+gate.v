@@ -2,7 +2,7 @@
 module top_module(
     input in,
     input clk,
-    output out);
+    output reg out);
     always @(posedge clk) begin
         out <= out ^ in;   // given in the ckt diagram 
     end
