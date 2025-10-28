@@ -1,15 +1,16 @@
-// Implementation of a given DFF (DFF with synchronus reset)
+// Implementation of a given DFF (DFF with asynchronus reset)
 module top_module(
     input d,
     input clk,
-    input r,    // synchronus reset
+    input ar,   // asynchronus reset
     output reg q);
-    always @(posedge clk) begin
-        if(r) begin
-            q <= 1'b0;     // synchronus reset -> reset works in synchronism with clk
+    always @(posedge clk or posedge ar) begin
+        if(ar) begin
+            q <= 1'b0;
         end
         else begin
             q <= d;
         end
     end
 endmodule
+

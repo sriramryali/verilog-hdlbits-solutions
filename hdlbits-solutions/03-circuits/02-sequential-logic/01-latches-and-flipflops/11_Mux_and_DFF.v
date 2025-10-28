@@ -1,12 +1,11 @@
-// Implementation of a single block of a n-bit shift register
+// Implementation of a submodule for given ckt
 module top_module(
     input clk,
-    input w,
-    input R,
-    input E,
     input L,
+    input r_in,
+    input q_in,
     output reg Q);
     always @(posedge clk) begin
-        Q <= L ? R : (E ? w : Q);   // a simple MUX ckt mentioned given in the diagram
+        Q <= L ? r_in : q_in;      // MUX is given in the ckt diagram
     end
 endmodule
