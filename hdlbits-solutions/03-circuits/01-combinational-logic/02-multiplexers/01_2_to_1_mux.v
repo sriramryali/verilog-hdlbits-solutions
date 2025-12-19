@@ -2,7 +2,7 @@
 module top_module(
     input sel,
     input a,
-    input b
+    input b,
     output out);
     assign out = sel ? b : a;   // easiest way to do is to use conditional ternery operator
 endmodule
