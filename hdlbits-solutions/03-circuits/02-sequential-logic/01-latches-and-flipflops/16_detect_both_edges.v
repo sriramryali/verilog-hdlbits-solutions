@@ -8,4 +8,5 @@ module top_module(
         Q <= in;
         anyedge <= in ^ Q;    // as we need to detect both 0 to 1 and 1 to 0 transitions, we consider both +ve and -ve edge detectors -> ~in & Q | in & ~Q : simply an xor operation 
     end
+endmodule
     
