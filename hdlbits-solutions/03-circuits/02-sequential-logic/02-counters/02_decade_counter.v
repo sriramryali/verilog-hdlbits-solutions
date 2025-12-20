@@ -1,4 +1,4 @@
-// Implementation of a decade counter(counts 10 nos) - synchronus counter
+// Implementation of a decade counter(counts 10 nos) : synchronus counter
 module top_module(
     input clk,
     input reset,          // synchronus active high reset
