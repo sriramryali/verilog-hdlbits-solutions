@@ -13,4 +13,3 @@ module top_module(
     end
     assign out = q[0];   // here out is a wire type variable, not reg
 endmodule
-    
