@@ -1,7 +1,7 @@
 // Implementation of a DFF with byte enable that allows to modify parts of a group of flip flops
 module top_module(
     input clk,
-    input resetn,      // synchronus active low reset triggered by +ve edge of the clock
+    input resetn,      // synchronous active low reset triggered by +ve edge of the clock
     input [15:0] d,
     input [1:0] byteena,
     output reg [15:0] q);

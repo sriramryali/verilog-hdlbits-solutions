@@ -1,7 +1,7 @@
 // Implementation of a ckt that detects -ve edge(1 to 0 transition) and stores it
 module top_module(
     input clk,
-    input reset,               // synchronus active high reset
+    input reset,               // synchronous active high reset
     input [31:0] in,
     output reg [31:0] out);
     reg [31:0] Q;
@@ -11,7 +11,7 @@ module top_module(
             out <= 32'd0;
         end
         else begin
-            out <= (~in & Q) | out;     // negative edge detection, only difference is that once a negative edge is found, the output should be one until reset occurs : hence we are using an OR operation with the previous value of output and the present outptu condition(~in & Q)
+            out <= (~in & Q) | out;     // negative edge detection, only difference is that once a negative edge is found, the output should be one until reset occurs : hence we are using an OR operation with the previous value of output and the present output condition(~in & Q)
         end
     end
 endmodule

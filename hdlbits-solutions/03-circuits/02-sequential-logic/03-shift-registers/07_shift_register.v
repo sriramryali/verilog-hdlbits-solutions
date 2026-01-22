@@ -1,7 +1,7 @@
 // Implementation of a shift register ckt(4-bit)
 module top_module(
     input clk,        
-    input resetn,        // synchronus active low reset
+    input resetn,        // synchronous active low reset
     input in,            // external input to the first FF
     output out);         
     reg [3:0] q;         // temporary names for internal FFs

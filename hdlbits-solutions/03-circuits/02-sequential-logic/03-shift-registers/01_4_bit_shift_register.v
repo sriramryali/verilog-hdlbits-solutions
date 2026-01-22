@@ -1,7 +1,7 @@
 // Implementation of a shift register(shift right)
 module top_module(
     input clk,
-    input areset,      // asynchronus reset
+    input areset,      // asynchronous reset
     input load,        // when load is high, instead of shifting, it loads the data(like a DFF) : q <= data
     input ena,         // it shifts only when enable is high
     input [3:0] data,

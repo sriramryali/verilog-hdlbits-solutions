@@ -1,7 +1,7 @@
 // Implementation of a 32-bit LFSR(tap positions are given at 32,22,2,1) Note : tap positions start from 1, but FFs' naming starts from 0 - just a convention  
 module top_module(
     input clk,
-    input reset,                // active high synchronus reset : resets to 32'h1 
+    input reset,                // active high synchronous reset : resets to 32'h1 
     output reg [31:0] q);       // a 32-bit regiser
     always @(posedge clk) begin
         if (reset)

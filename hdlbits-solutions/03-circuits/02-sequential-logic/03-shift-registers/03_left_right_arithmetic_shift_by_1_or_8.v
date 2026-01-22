@@ -1,7 +1,7 @@
 // Implementation of a left/right arithmetic shift(by 1 or 8)
 module top_module(
     input clk,
-    input load,            // synchronus load
+    input load,            // synchronous load
     input ena,             // tells whether to shift or not
     input [1:0] amount,    // mentioned in the question
     input [63:0] data, 

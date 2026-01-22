@@ -1,7 +1,7 @@
-// Implementation of a decade counter(counts 10 nos) : synchronus counter
+// Implementation of a decade counter(counts 10 nos) : synchronous counter
 module top_module(
     input clk,
-    input reset,          // synchronus active high reset
+    input reset,          // synchronous active high reset
     output reg [3:0] q);
     always @(posedge clk) begin 
         if (reset || (q == 4'b1001)) begin     // counts from 0 to 9, whenever reset is applied or q becomes 9, next state is set to 0

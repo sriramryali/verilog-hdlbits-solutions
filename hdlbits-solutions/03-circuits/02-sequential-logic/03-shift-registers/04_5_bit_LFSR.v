@@ -1,7 +1,7 @@
 // Implementation of a 5-bit LFSR(linear feedback shift register) ckt
 module top_module(
     input clk,
-    input reset,                // active high synchronus reset : resets to 5'h1
+    input reset,                // active high synchronous reset : resets to 5'h1
     output reg [4:0] q);        // a 5-bit register
     always @(posedge clk) begin
         if (reset)

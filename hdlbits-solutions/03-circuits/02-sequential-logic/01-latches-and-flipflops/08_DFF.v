@@ -1,8 +1,8 @@
-// Implementation of a given DFF (DFF with asynchronus reset)
+// Implementation of a given DFF (DFF with asynchronous reset)
 module top_module(
     input d,
     input clk,
-    input ar,   // asynchronus reset
+    input ar,   // asynchronous reset
     output reg q);
     always @(posedge clk or posedge ar) begin
         if(ar) begin

@@ -1,7 +1,7 @@
 // Implementation of a decade counter with enable(slowena)
 module top_module(
     input clk,
-    input reset,    // active high synchronus reset
+    input reset,    // active high synchronous reset
     input slowena,  // counter counts only when the enable is high(else it retains it's previous value )
     output [3:0] q);
     always @(posedge clk) begin
