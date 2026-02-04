@@ -1,4 +1,4 @@
-// Building a combinational ckt from waveform
+// Building a combinational ckt from waveforms
 module top_module(
     input a,
     input b,
