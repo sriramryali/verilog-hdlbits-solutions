@@ -4,7 +4,7 @@ module top_module(
     input [1:0] state,
     output [1:0] next_state,
     output out);
-    // parameter for states
+    // parameters for all the states
     parameter A = 0, B = 1, C = 2, D = 3;
 
     // state tranisition logic

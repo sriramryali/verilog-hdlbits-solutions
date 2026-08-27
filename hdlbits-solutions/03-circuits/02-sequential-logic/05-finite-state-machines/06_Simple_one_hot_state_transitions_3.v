@@ -4,7 +4,7 @@ module top_module(
     input [3:0] state,
     output [3:0] next_state,
     output out);
-    // parameter for states
+    // parameters for all states
     parameter A = 0, B = 1, C = 2, D = 3;
 
     // state transition, equation for each flip-flop
